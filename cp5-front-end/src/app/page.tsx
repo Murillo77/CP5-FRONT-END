@@ -29,13 +29,16 @@ export default function HomePage() {
     <div>
       <h2>imagens da nasa</h2>
       <div>
-        {imagens.map((imagemData, index) => {
-          const imagemUrl = `https://epic.gsfc.nasa.gov/archive/natural/jpg/${imagemData.image}.jpg`;
+        {imagens.map((imagem, index) => {
+          const [data, hora] = imagem.date.split(" ");
+          const [ano, mes, dia] = data.split("-");
+
+          const imagemUrl = `https://epic.gsfc.nasa.gov/archive/natural/${ano}/${mes}/${dia}/png/${imagem.image}.png`;
 
           return (
             <div key={index}>
-              <Image src={imagemUrl} alt={imagemData.caption} width={200} height={200} />
-              <h3>{imagemData.caption}</h3>
+              <Image src={imagemUrl} alt={imagem.caption} width={200} height={200} />
+              <h3>{imagem.caption}</h3>
             </div>
           );
         })}
