@@ -1,13 +1,6 @@
 
-import Menu from "@/components/Menu/Menu"
-
-export default function Home() {
-  return (
-    <div>
-  
-        <Menu />
-
 "use client";
+import Menu from "@/components/Menu/Menu";
 import { NasaImage } from "@/types/NasaImagem";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -36,6 +29,7 @@ export default function HomePage() {
 
   return (
     <div>
+      <Menu />
       <h2>imagens da nasa</h2>
       <div>
         {imagens.map((imagem, index) => {
@@ -43,7 +37,6 @@ export default function HomePage() {
           const [ano, mes, dia] = data.split("-");
 
           const imagemUrl = `https://epic.gsfc.nasa.gov/archive/natural/${ano}/${mes}/${dia}/png/${imagem.image}.png`;
- main
 
           return (
             <div key={index}>
