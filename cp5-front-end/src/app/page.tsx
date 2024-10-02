@@ -28,10 +28,11 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div>
-      <Menu />
-      <h2>imagens da nasa</h2>
-      <div>
+    <>
+       <Menu />
+    
+    <div className="Cont-2">
+      <div className="box">
         {imagens.map((imagem, index) => {
           const [data, hora] = imagem.date.split(" ");
           const [ano, mes, dia] = data.split("-");
@@ -47,5 +48,6 @@ export default function HomePage() {
         })}
       </div>
     </div>
+    </>
   );
 }
