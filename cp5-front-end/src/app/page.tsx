@@ -1,4 +1,3 @@
-
 "use client";
 import Menu from "@/components/Menu/Menu";
 import { NasaImage } from "@/types/NasaImagem";
