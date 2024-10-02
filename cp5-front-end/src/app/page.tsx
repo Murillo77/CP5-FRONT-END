@@ -33,7 +33,7 @@ export default function HomePage() {
       <h2>imagens da nasa</h2>
       <div>
         {imagens.map((imagem, index) => {
-          const [data, hora] = imagem.date.split(" ");
+          const data = imagem.date.split(" ")[0];
           const [ano, mes, dia] = data.split("-");
 
           const imagemUrl = `https://epic.gsfc.nasa.gov/archive/natural/${ano}/${mes}/${dia}/png/${imagem.image}.png`;
