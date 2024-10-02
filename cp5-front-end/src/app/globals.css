@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .Imagem img{
+        @apply size-1/2
+    }
+    .Imagem{
+        @apply flex justify-center bg-[rgb(2,31,63)] 
+    }
+}
