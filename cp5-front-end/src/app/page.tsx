@@ -1,3 +1,12 @@
+
+import Menu from "@/components/Menu/Menu"
+
+export default function Home() {
+  return (
+    <div>
+  
+        <Menu />
+
 "use client";
 import { NasaImage } from "@/types/NasaImagem";
 import Image from "next/image";
@@ -34,6 +43,7 @@ export default function HomePage() {
           const [ano, mes, dia] = data.split("-");
 
           const imagemUrl = `https://epic.gsfc.nasa.gov/archive/natural/${ano}/${mes}/${dia}/png/${imagem.image}.png`;
+ main
 
           return (
             <div key={index}>
