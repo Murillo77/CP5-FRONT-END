@@ -9,4 +9,19 @@
     .Imagem{
         @apply flex justify-center bg-[rgb(2,31,63)] 
     }
+    .menu{
+        @apply bg-[rgb(72,131,194)] w-full h-28 flex justify-evenly items-center text-white
+    }
+    .container{
+        @apply text-center 
+    }
+    .titulo{
+        @apply md:text-3xl m-4
+    }
+    .subtitulo{
+        @apply md:text-2xl m-4
+    }
+    .texto{
+        @apply text-justify md:text-xl m-7
+    }
 }
