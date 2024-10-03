@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components{
+    *{
+       @apply m-0
+    }
     .Imagem img{
         @apply size-1/2
     }
@@ -25,6 +28,17 @@
         @apply text-justify md:text-xl m-7
     }
     .Cont-2{
-        @apply text-center flex justify-center m-5
+        @apply text-center flex justify-center 
     }
+    .box img{
+        @apply m-auto
+    }
+    .box{
+        @apply  bg-[#000] p-10 size-full
+    }
+    .descricao{
+        @apply mt-5 mb-5 text-white
+    }
+    
+
 }
