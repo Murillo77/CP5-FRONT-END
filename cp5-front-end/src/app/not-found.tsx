@@ -10,6 +10,5 @@ export default function NotFound() {
               <Image layout="intrinsic" src={ImagemErro} alt="Página de erro." />
             </div>
         </>
-        
     )
 }
