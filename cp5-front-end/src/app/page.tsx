@@ -42,7 +42,7 @@ export default function HomePage() {
           return (
             <div key={index}>
               <Image src={imagemUrl} alt={imagem.caption} width={200} height={200} />
-              <h3>{imagem.caption}</h3>
+              <h3 className="descricao">{imagem.caption}</h3>
             </div>
           );
         })}
